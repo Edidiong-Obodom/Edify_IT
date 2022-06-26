@@ -9,6 +9,7 @@ const customerSchema = new mongoose.Schema({
     username: String,
     path: String,
     accounts: [{
+        indi: Number,
         blocked: String,
         accName: String,
         accNo: String,

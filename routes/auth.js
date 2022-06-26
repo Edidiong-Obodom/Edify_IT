@@ -112,6 +112,7 @@ router.post('/registernew/:smart', connectEnsureLogin.ensureLoggedIn(), async (r
                     username: user.username,
                     path: smart,
                     accounts: [{
+                      indi: 1,
                         blocked: 'no',
                         accName: user.firstname + ' ' + user.lastname,
                         accNo: `${typeAcc()}${theSeven.index()}`,
@@ -155,6 +156,7 @@ router.post('/registerold/:smart', connectEnsureLogin.ensureLoggedIn(), async (r
                  
         user.accounts.push(
                     {indi: user.accounts.length + 1,
+                    blocked: 'no',
                     accName: user.firstname + ' ' + user.lastname,
                     accNo: accno,
                     accType: req.body.accountType}
