@@ -663,20 +663,18 @@ const accTypeCurrent = '202';
   
   });
 
-  router.post('/transferval/:smart/:no', connectEnsureLogin.ensureLoggedIn(), (req, res) => {
+  router.post('/transferval/:smart/:no', connectEnsureLogin.ensureLoggedIn(), async (req, res) => {
     const no = req.params.no;
     const smart = req.params.smart;
     const senderName = req.body.senderName;
     const receiver = req.body.receiver;
     const amount = req.body.amount;
-    
-    Customer.find({"accounts.accNo": receiver}, function (err, foundAcc) {
+    const coll = await Customer.findOne({"accounts.accNo": receiver});
 
-      if (err) {
-        console.log(err);
-      } else {
-        foundAcc.forEach(acc => {
-          const acco = acc.accounts;
+      if (!coll) {
+       return res.redirect('/oops/' + smart + '/' + no);
+      } else if (coll){
+          const acco = coll.accounts;
            
          const pos = acco.map(function(e) {
             return e.accNo;
@@ -684,17 +682,25 @@ const accTypeCurrent = '202';
 
         
         
-        res.render('confirm', {ReceiverAccNo: receiver, ReceiverName: acco[pos].accName, 
+        return res.render('confirm', {ReceiverAccNo: receiver, ReceiverName: acco[pos].accName, 
           HolderAccNo: no, HolderName: senderName, amount: amount, email: smart});
-        });
-      }
-      
-    });
+        
+      } 
+    
              
   
   });
 
   
+router.get('/oops/:smart/:no', connectEnsureLogin.ensureLoggedIn(), async(req, res) => {
+    const smart = req.params.smart;
+    const no = req.params.no;
+    const cust = await User.findOne({ path: smart });
+    res.render('oops', {email: smart, HolderAccNo: no, HolderName: cust.firstname + ' ' + cust.lastname});
+       
+  });
+
+
 router.get('/welcome/:smart/:no', connectEnsureLogin.ensureLoggedIn(), async(req, res) => {
     const smart = req.params.smart;
     const no = req.params.no;
