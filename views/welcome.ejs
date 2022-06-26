@@ -1,0 +1,45 @@
+<%- include('partials/emailheader') %>
+
+<li class="nav-item">
+	<a class="nav-link active spacing" aria-current="page" href="/ehome/<%= email %>">HOME</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link active spacing" aria-current="page" href="/emailabout/<%= email %>">ABOUT US</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link active spacing" aria-current="page" href="/emailcontact/<%= email %>">CONTACT US</a>
+  </li>
+  
+</ul>
+
+</div>
+</div>
+</nav>
+<section>
+    <div class="infoBody dashBoard container">
+        <div class="row dash">
+            <div class="pricing-column">
+              <div class="card">      
+                      
+                <div class="card-body bg-light cardMargin">
+                  <marquee behavior="scroll" direction="left" scrollamount="12"><h2 class="pricing-heading"><%= HolderName %> Welcome to  <i class="fa-solid colorCool fa-wallet"></i>
+                    <i class="fa-solid colorCool fa-money-bill-transfer">TheVault</i></h2></marquee><br>
+                  
+                  <button class="btn d-grid gap-2 btn-outline-dark dropdown" style="border:1px solid #777777;" type="button">
+                    <a href="/accounts/<%= email %>" class="d-flex  noTextDecor" aria-expanded="false">
+                      Acc Details
+                    </a>
+                    </button>
+  
+                </div>
+  
+        
+              </div>
+            </div>
+      </div>
+  </section>
+  
+  </main>        
+  <br>
+  <div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
+  <%- include('partials/footer') %>

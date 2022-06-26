@@ -1,0 +1,382 @@
+body {
+    background-image: 
+    linear-gradient(to top, rgb(88,88,88), rgba(0,0,255,0.5)),
+    url(/images/FinTech.jpg) ;
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Verdana;
+  
+}
+
+h1{
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+#owl a:hover{
+    color: antiquewhite;
+}
+
+.comeDown{
+    margin-top: 5px;
+    color: #777777;
+}
+
+.colorCool{
+    color: #777777;
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+
+  .infoBody{
+    color: antiquewhite;
+    font-family: Verdana;
+    letter-spacing: 1px;
+}
+
+.infoBody p{
+    font-size: 23px;
+    line-height: 1.6;
+}
+.infoBody .dash{
+    color: #777777;
+    letter-spacing: 1px;
+}
+.infoBody a{
+    text-decoration: none;
+    color: #777777;
+}
+.infoBody a[href="/auth/register"]{
+    color: antiquewhite;
+}
+
+.infoBody a[class="accounts"]{
+    color: antiquewhite;
+}
+.infoBody a[class="accounts"]:hover{
+    color: #000;
+}
+.infoBody a[href="/login"]{
+    color: antiquewhite;
+}
+.infoBody a[href="/login"]:hover{
+    color: #000;
+}
+.infoBody a[href="/auth/login/customer"]{
+    color: antiquewhite;
+}
+.infoBody a[href="/auth/login/customer"]:hover{
+    color: #000;
+}
+
+
+
+.noTextDecor{
+    text-decoration: none;
+}
+.noTextDecor:hover{
+    color: antiquewhite;
+}
+.cilGrimmysGrey
+{
+    color: #777777;
+}
+.spacing{
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.disappear{
+    display: inline;
+}
+
+
+.lightLord{
+    color: antiquewhite;
+}
+
+.download-button{
+    margin: 2% 2% 2% 0;
+}
+
+/* register and sign in*/
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+.drop{
+    padding-top: 30%;
+    /* padding-top: 10%; */
+}
+.dropWell{
+    padding-top: 20%;
+    /* padding-top: 10%; */
+}
+  
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[name="firstname"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[name="lastname"] {
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="date"] {
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form-signin input[type="tell"] {
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[name="password"] {
+    /* margin-bottom: 10px; */
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[id ="yo"] {
+    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .form-signin select{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+/*side bar*/
+
+/* element.style {
+    width: 280px;
+}
+
+.p-3 {
+    padding: 1rem!important;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0!important;
+}
+
+.flex-column {
+    flex-direction: column!important;
+}
+
+.d-flex {
+    display: flex!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+} */
+
+/* Testimonials */
+#owl img{
+  
+    filter: brightness(80%);
+  
+}
+#owl a{
+    text-decoration: none;
+    color: #777777;
+  }
+#owl p{
+    font-size: 16px;
+    font-family: Verdana;
+}
+.classB{
+    background-color: #d3d3d3;
+}
+
+/*scroll menue*/
+tr{
+    color: #777777;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+  
+
+@media (min-width: 300px) {
+    .infoBody{
+        margin-top: 16%;
+        
+    }
+    .disappear{
+        display: none;
+    }
+    .dashBoard{
+        margin-top: 30%;
+      }
+      .down{
+        margin-top: 35%;
+    }
+      
+}
+
+@media (min-width: 514px) {
+    
+    .disappear{
+        display: none;
+    }
+    .dashBoard{
+        margin-top: 20%;
+      }
+      
+}
+@media (min-width: 561px) {
+    
+    .disappear{
+        display: none;
+    }
+    .dashBoard{
+        margin-top: 20%;
+      }
+    .drop{
+        /* padding-top: 30%; */
+        padding-top: 20%;
+    }
+      
+}
+@media (min-width: 633px) {
+    .infoBody{
+        margin-top: 14%;
+        
+        
+    }
+    .disappear{
+        display: none;
+    }
+    .dashBoard{
+        margin-top: 20%;
+      }
+    .down{
+        margin-top: 18%;
+    }
+
+}
+
+@media (min-width: 750px){
+    .drop{
+        /* padding-top: 30%; */
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 770px) {
+    .infoBody{
+        margin-top: 14%;
+        
+        
+    }
+    .disappear{
+        display: none;
+    }
+    .dashBoard{
+        margin-top: 17%;
+      }
+    .poof{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .pad{
+        padding-left: 55%;
+    }
+
+    .infoBody{
+        margin-top: 11%;
+        
+    }
+    
+    .disappear{
+        display: inline-block;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .pad{
+        padding-left: 62%;
+    }
+    .infoBody{
+        margin-top: 10%;
+        
+    }
+    
+    .disappear{
+        display: inline-block;
+    }
+
+    
+}

@@ -1,0 +1,112 @@
+<%- include('partials/emailheader') %>
+
+<li class="nav-item">
+	<a class="nav-link active spacing" aria-current="page" href="/ehome/<%= email %>">HOME</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link active spacing" aria-current="page" href="/emailabout/<%= email %>">ABOUT US</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link active spacing" aria-current="page" href="/emailcontact/<%= email %>">CONTACT US</a>
+  </li>
+  
+</ul>
+
+</div>
+</div>
+</nav>
+<!-- <div class="container" style="text-align: right; color:antiquewhite ;">edijay17@gmail.com</div> -->
+  <div class="container">
+	<button class="btn d-grid gap-2 btn-outline-dark dropdown" style="border:1px;" type="button">
+		<a href="#" class="d-flex align-items-center noTextDecor dropdown-toggle" style="color: antiquewhite;" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+		   <%= Email %> 
+		</a>
+		<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+			<li><a class="dropdown-item cilGrimmysGrey" href="/auth/securityquecheck/<%= email %>">Reset Password</a></li>
+			<li><a class="dropdown-item cilGrimmysGrey" href="/auth/logout">LogOut</a></li>
+		  </ul>
+		</button>
+  </div>
+  <div class="infoBody container" style="margin-top: 3%;">
+    <h1 style="font-weight: bold;">Banking Made Easy</h1>
+    <p>Swift and Easy Transactions, Outstanding Customer <br class="disappear">Service and many more...</p>
+    <button class="btn btn-dark btn-lg  download-button" type="button">
+        <a style="color: antiquewhite;" href="/register/<%= email %>">Create Account</a>
+      </button>
+      <button class="btn btn btn-outline-light btn-lg lightLord download-button" type="button">
+        <a href="/accounts/<%= email %>" class="accounts">My Accounts</a>
+      </button>
+    <section id="owl">
+		<div class="row mt-5">
+              
+			<div class="owl-carousel owl-theme">
+
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://images.unsplash.com/photo-1559067096-49ebca3406aa?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aW52ZXN0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500" alt="">
+						<div class="card-body classB">
+							<p>Track Your Investments</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://media.istockphoto.com/photos/dollar-seedling-growth-concept-plants-on-bills-in-increase-picture-id1297492947?k=20&m=1297492947&s=612x612&w=0&h=ylfbllxD7Y_W0LeaZXg99-m5W4OEa_m0O3ZwxCR4sE8=" alt="">
+						<div class="card-body classB">
+							<p>Grow Your savings</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://media.istockphoto.com/photos/trading-charts-on-a-display-picture-id1317587887?b=1&k=20&m=1317587887&s=170667a&w=0&h=L1Npj1k-fSnDAkafyzfeIL4LsVvue7sY-65AAiEQEdE=" alt="">
+						<div class="card-body classB">
+							<p>Buy Shares And Bonds</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://images.unsplash.com/photo-1568234928966-359c35dd8327?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGludmVzdG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500" alt="">
+						<div class="card-body classB">
+							<p>ForEx Trading</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://media.istockphoto.com/photos/bitcoin-on-a-led-technological-light-surface-picture-id879153690?k=20&m=879153690&s=612x612&w=0&h=_sZol1YN9OUCZdXAlg2OiAhlhD2iYv19vD_-cf1iUCc=" alt="">
+						<div class="card-body classB">
+							<p>Trade Crypto Currency</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+
+
+			</div>
+		</div>
+	  </section>
+    
+  </div>
+
+<br>
+<div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
+
+<%- include('partials/footer') %> 

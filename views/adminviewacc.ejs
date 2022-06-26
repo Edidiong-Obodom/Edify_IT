@@ -1,0 +1,100 @@
+<%- include('partials/adminhead') %>
+
+<section class="container">
+    <div class="row">
+<%const ac = accounts.sort(function(a, b){return parseFloat(b.indi) - parseFloat(a.indi)}); ac.forEach(customer => {%>
+   
+            <% if (customer.blocked === 'yes') {%>
+              <div style="margin-top: 3%;" class="infoBody col-md-6 col-lg-4">
+                
+                    
+                <form action="/admin/transactionhis/<%= email %>/<%= customer.accNo %>" method="post">
+                    <div class="card">
+                        <div class="card-body bg-light cardMargin">
+                            <div class="form-floating">
+                                <select class="form-select" name="accountType" aria-label="Default select example" required>
+                                    <option value="<%= customer.accName %>">Acc Name: <%= customer.accName %></option>
+                                    
+                                  </select>
+                              </div>
+                            <div class="form-floating">
+                                <select class="form-select" name="accountType" aria-label="Default select example" required>
+                                    <option value="<%= customer.accNo %>">Acc No: <%= customer.accNo %></option>
+                                    
+                                  </select>
+                              </div>
+                            <div class="form-floating">
+                                <select class="form-select" name="accountType" aria-label="Default select example" required>
+                                    <option value="<%= customer.accType %>">Acc Type: <%= customer.accType %></option>
+                                    
+                                  </select>
+                              </div>
+                            
+                            <br>
+                            <button class="btn btn-dark btn-lg lightLord download-button" style="color: antiquewhite;" 
+                            type="submit">
+                            See Transactions
+                            </button>
+                            <button  class="btn btn btn-outline-dark btn-lg lightLord download-button" 
+                            style="color: #777;" type="button">
+                                <a href="/immute/<%= email %>/<%= customer.accNo %>" style="color: #777;" class="accounts">
+                                  <i class="fa-solid fa-ban"></i>UnBlock Account</a>
+                            </button>
+          
+                          </div>
+                    </div>
+                </form>
+  </div>
+            <%} else {%>
+
+              <div style="margin-top: 3%;" class="infoBody col-md-6 col-lg-4">
+                
+                    
+                <form action="/admin/transactionhis/<%= email %>/<%= customer.accNo %>" method="post">
+                    <div class="card">
+                        <div class="card-body bg-light cardMargin">
+                            <div class="form-floating">
+                                <select class="form-select" name="accountType" aria-label="Default select example" required>
+                                    <option value="<%= customer.accName %>">Acc Name: <%= customer.accName %></option>
+                                    
+                                  </select>
+                              </div>
+                            <div class="form-floating">
+                                <select class="form-select" name="accountType" aria-label="Default select example" required>
+                                    <option value="<%= customer.accNo %>">Acc No: <%= customer.accNo %></option>
+                                    
+                                  </select>
+                              </div>
+                            <div class="form-floating">
+                                <select class="form-select" name="accountType" aria-label="Default select example" required>
+                                    <option value="<%= customer.accType %>">Acc Type: <%= customer.accType %></option>
+                                    
+                                  </select>
+                              </div>
+                            
+                            <br>
+                            <button class="btn btn-dark btn-lg lightLord download-button" style="color: antiquewhite;" 
+                            type="submit">
+                            See Transactions
+                            </button>
+                            <button  class="btn btn btn-outline-dark btn-lg lightLord download-button" 
+                            style="color: #777;" type="button">
+                                <a href="/immute/<%= email %>/<%= customer.accNo %>" style="color: #777;" class="accounts">
+                                  <i class="fa-solid fa-ban"></i>Block Account</a>
+                            </button>
+          
+                          </div>
+                    </div>
+                </form>
+  </div>
+              
+            <%} %> 
+                
+     
+  <%});%>
+</div>
+</section>
+
+<br>
+<div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
+<%- include('partials/footer') %>

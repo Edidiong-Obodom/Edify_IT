@@ -1,0 +1,125 @@
+<%- include('partials/sideToggleHeader') %> 
+
+<hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="/ehome/<%= email %>" class="nav-link active" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                  Home
+                </a>
+              </li>
+<li>
+  <a href="/dashboard/<%= email %>/<%= HolderAccNo %>" class="nav-link link-dark">
+    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+    Dashboard
+  </a>
+</li>
+<li>
+  <a href="#" class="nav-link link-dark">
+    <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+    Orders
+  </a>
+</li>
+<li>
+  <a href="#" class="nav-link link-dark">
+    <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+    Products
+  </a>
+</li>
+<li>
+  <a href="https://wa.me/qr/N4M77VDYB6U6C1" class="nav-link link-dark">
+    <i class="fa-solid fa-user" style="margin-right: 3%;"></i>
+    Customer Service
+  </a>
+</li>
+</ul>
+<hr>
+<div class="dropdown">
+  <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+    <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
+    <svg class="bi rounded-circle me-2" width="32" height="32"><use xlink:href="#people-circle"></use></svg>
+    <strong><%= HolderName %> </strong>
+  </a>
+  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+    <li><a class="dropdown-item" href="/register/<%= email %>">New Account...</a></li>
+    <li><a class="dropdown-item" href="/profile/<%= email %>/<%= HolderAccNo %>">Profile</a></li>
+    <li><a class="dropdown-item" href="/transactionhis/<%= email %>/<%= HolderAccNo %>">Transaction History</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/auth/logout"  role="button">Sign out</a></li>
+  </ul>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</nav> 
+    
+<section>
+    <div class="infoBody dashBoard container">
+        <div class="row dash">
+            <div class="pricing-column">
+              <div class="card">
+                
+                <form action="/confirm/<%= email %>/<%= HolderAccNo %>" method="post">
+                    <div class="card-body bg-light cardMargin">
+                        <h2 class="pricing-heading">Transfer 
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInput" value="<%= amount %>" 
+                            name="amount"  autocomplete="off" readonly>
+                          </div>
+                        </h2>
+                        <p>From</p>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInput" value="<%= HolderName %>" 
+                          name="sendername"  autocomplete="off" readonly>
+                        </div>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInput" value="<%= HolderAccNo %>" 
+                          name="sender"  autocomplete="off" readonly>
+                        </div>
+                        <p>To</p>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInput" value="<%= ReceiverName %>" 
+                          name="receivername"  autocomplete="off" readonly>
+                        </div>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInput" value="<%= ReceiverAccNo %>" 
+                          name="receiver"  autocomplete="off" readonly>
+                        </div>
+                        <p style="color: red; font-size: 13px;">Wrong 4Digit-Pin</p>
+                        <div class="form-floating">
+                          <input type="password" class="form-control" id="yo" name="password" id="floatingPassword" minlength="4" 
+                          maxlength="4" autocomplete="new-password" required>
+                          <label for="floatingPassword">4Digit-Pin</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" onclick="myFunction()" value="" id="flexCheckDefault">
+                          <label class="form-check-label" style="color: #777777;" for="flexCheckDefault">
+                            Show 4Digit-Pin
+                          </label>
+                        </div>
+                        
+                        <br>
+                        <button class="btn btn-dark btn-lg lightLord download-button" style="color: antiquewhite;" 
+                        type="submit">
+                          Yes
+                        </button>
+                        <button class="btn btn btn-outline-light btn-lg lightLord download-button" style="border:1px solid #777777;" type="button">
+                           <a href="/dashboard/<%= email %>/<%= HolderAccNo %>">No</a>
+                        </button>
+      
+                      </div>
+                </form>
+
+        
+              </div>
+            </div>
+      </div>
+  </section>
+
+  
+</main>
+<br>
+<div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
+<%- include('partials/footer') %> 

@@ -1,0 +1,136 @@
+<%- include('partials/sideToggleHeader') %> 
+
+<hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="/landingpage/<%= HolderAccNo %>" class="nav-link active" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                  Home
+                </a>
+              </li>
+<li>
+	<a href="/dashboard/<%= HolderAccNo %>" class="nav-link link-dark">
+	  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+	  Dashboard
+	</a>
+  </li>
+  <li>
+	<a href="#" class="nav-link link-dark">
+	  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+	  Orders
+	</a>
+  </li>
+  <li>
+	<a href="#" class="nav-link link-dark">
+	  <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+	  Products
+	</a>
+  </li>
+  <li>
+	<a href="https://wa.me/qr/N4M77VDYB6U6C1" class="nav-link link-dark">
+		<i class="fa-solid fa-user" style="margin-right: 3%;"></i>
+	  Customer Service
+	</a>
+  </li>
+  </ul>
+  <hr>
+<div class="dropdown">
+	<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+	  <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
+	  <svg class="bi rounded-circle me-2" width="32" height="32"><use xlink:href="#people-circle"></use></svg>
+	  <strong><%= HolderName %> </strong>
+	</a>
+	<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+      <li><a class="dropdown-item" href="/register">New Account...</a></li>
+	  <li><a class="dropdown-item" href="/profile/<%= HolderAccNo %>">Profile</a></li>
+	  <li><a class="dropdown-item" href="/transactionhis/<%= HolderAccNo %>">Transaction History</a></li>
+	  <li><hr class="dropdown-divider"></li>
+	  <li><a class="dropdown-item" href="/auth/logout"  role="button">Sign out</a></li>
+	</ul>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  </nav>
+
+<div class="infoBody down container disappearTwo" id="dashBoard">
+    <h1 style="font-weight: bold;">Banking Made Easy</h1>
+    <p>Swift and Easy Transactions, Outstanding Customer <br class="disappear">Service and many more...</p>
+    <section id="owl">
+		<div class="row mt-5">
+              
+			<div class="owl-carousel owl-theme">
+
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://images.unsplash.com/photo-1559067096-49ebca3406aa?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aW52ZXN0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500" alt="">
+						<div class="card-body classB">
+							<p>Track Your Investments</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://media.istockphoto.com/photos/dollar-seedling-growth-concept-plants-on-bills-in-increase-picture-id1297492947?k=20&m=1297492947&s=612x612&w=0&h=ylfbllxD7Y_W0LeaZXg99-m5W4OEa_m0O3ZwxCR4sE8=" alt="">
+						<div class="card-body classB">
+							<p>Grow Your savings</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://media.istockphoto.com/photos/trading-charts-on-a-display-picture-id1317587887?b=1&k=20&m=1317587887&s=170667a&w=0&h=L1Npj1k-fSnDAkafyzfeIL4LsVvue7sY-65AAiEQEdE=" alt="">
+						<div class="card-body classB">
+							<p>Buy Shares And Bonds</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://images.unsplash.com/photo-1568234928966-359c35dd8327?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGludmVzdG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500" alt="">
+						<div class="card-body classB">
+							<p>ForEx Trading</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+				<div class="pricing-column item mb-4">
+					<div class="card border-0 shadow">
+						<a href="#" target="_blank">
+							<img class="card-image-top" height="190px" src="https://media.istockphoto.com/photos/bitcoin-on-a-led-technological-light-surface-picture-id879153690?k=20&m=879153690&s=612x612&w=0&h=_sZol1YN9OUCZdXAlg2OiAhlhD2iYv19vD_-cf1iUCc=" alt="">
+						<div class="card-body classB">
+							<p>Trade Crypto Currency</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<!-- carousel ends -->
+
+
+			</div>
+		</div>
+	  </section>
+    
+  </div>
+  
+</main>
+
+<br>
+<div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
+    
+<%- include('partials/footer') %>   

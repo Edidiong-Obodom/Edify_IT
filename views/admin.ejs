@@ -1,0 +1,78 @@
+<%- include('partials/adminhead') %>
+
+<section>
+  <div style="margin-top: 3%;" class="infoBody dashBoard container">
+      <div class="row dash">
+          <div class="pricing-column">
+            <div class="card">
+              
+              <div class="card-body bg-light scrollmenu cardMargin">
+                <h2 class="pricing-heading">Admin</h2>
+                
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>      
+                      <th scope="col">#</th>
+                      <th scope="col">FirstName</th>
+                      <th scope="col">MiddleName</th>
+                      <th scope="col">LastName</th>
+                      <th scope="col">Accounts</th>
+                      <th scope="col">D.O.B</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Email Address</th>
+                      <th scope="col">Phone Number</th>
+                      <th scope="col">Sex</th>
+                      <!-- <th scope="col">Transactions</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Block</th>
+                      <th scope="col">Unblock</th>
+                      <th scope="col">Delete</th> -->
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                      <% for (let i = 0; i < customers.length; i++) {%>
+                        
+                        <tr>
+                      <th scope="row"><%= [i] %></th>
+                      <td><%= customers[i].firstname %></td>
+                      <td><%= customers[i].middlename %></td>
+                      <td><%= customers[i].lastname %></td>
+                      <td id="owl"><a class="a" 
+                        href="customers/accounts/<%= customers[i].path %>" 
+                        style="text-decoration: none; padding-top: 0; padding-bottom: 0;"><%= customers[i].accounts.length %></a></td>
+                      <td><%= customers[i].dateOfBirth %></td>
+                      <td><%= customers[i].address %></td>
+                      <td><%= customers[i].username %></td>
+                      <td><%= customers[i].phoneNumber %></td>
+                      <td><%= customers[i].sex %></td>
+                      
+                    </tr>
+                     <% } %>  
+                    
+               
+                  </tbody>
+                </table>
+
+              </div>
+
+              <!-- <td><i class="fa-solid fa-user"></i></td>
+              <td>Not Blocked</td>
+              <td><i class="fa-solid fa-ban"></i></td>
+              <td><i class="fa-solid fa-thumbs-up"></i></td>
+              <td><i class="fa-solid fa-trash-can"></i></button></td>  -->
+            </div>
+          </div>
+    </div>
+</section>
+
+</main>        
+<br>
+<div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
+    
+<%- include('partials/footer') %>
+
+    
+
+
+      
