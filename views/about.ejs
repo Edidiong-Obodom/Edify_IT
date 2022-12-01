@@ -1,13 +1,205 @@
 <%- include('partials/header') %>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+<%- include('partials/scripts') %>
  
-<div class="infoBody container disappearTwo">
-  <h1>About Us</h1>
-  <p>The Vault Is An Online Banking Platform, Made To Make Fintech Seemless. Actually This Is Just A Project 
-      To Test My Web Development Prowess... LOL.
-  </p>
-  
-  
-</div>
-<br>
-<div class="container"><p class="mt-5 mb-3 text-muted">Edidiong Obodom © 2022</p></div>
-<%- include('partials/footer') %>
+<nav class="navbar navbar-dark  fixed-top">
+    <div class="container">
+      <a class="navbar-brand edify" href="#">EDIFY I.T</a>
+      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end servcol" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title servcolText" id="offcanvasDarkNavbarLabel">EDIFY I.T</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+          <hr>
+          <footer id="footer">
+            <p>
+              <a 
+              rel="noreferrer"
+              target="_blank" href="https://twitter.com/edifyit1?t=TnQ6_51X-2ggKGx3tfkxSQ&s=08">
+                <span class="footerIcon">
+                  <i class="fa-brands fa-twitter"></i>
+                </span>
+              </a>
+              <a 
+              rel="noreferrer"
+              target="_blank" href=" https://www.facebook.com/EdifyHD">
+                <span class="footerIcon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </span>
+              </a>
+              <a 
+              rel="noreferrer"
+              target="_blank" href="https://instagram.com/edify_it">
+                <span class="footerIcon">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </a>
+              <a 
+              rel="noreferrer"
+              target="_blank" href="mailto:edifyit1@gmail.com?subject=Contacting%20Edify%20IT&body=Good%20day%20Ediy%20IT.">
+                <span class="footerIcon">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+              </a>
+            </p>
+            <p>©2022 Copyright Edify I.T</strong></p>
+            </footer>
+        </div>
+      </div>
+    </div>
+  </nav>
+    </div>
+       <!-- https://pbs.twimg.com/profile_images/1491475099421130763/ZdOzVwvP_400x400.jpg -->
+       <div class="container cenq">
+        <div class="row pic">
+            <div class="col-md-6">
+                <img
+            class="circular big"
+            src="images/me.jpeg"
+            alt="A photo of Eddy"
+          />
+            </div>
+            <!-- Background-image Write up -->
+            <div class="col-md-6 about">
+                <h1>
+                    About Me</h1>
+                <h4>I am Edidiong Obodom and a <span class="typewriteAbout"></span></h4>
+                    <p>
+                        I'm a Fullstack Web Developer who is committed to collaboration and 
+                        problem-solving with the use of various web design technologies 
+                        to develop custom-crafted, customer-focused websites and designs. 
+                        Committed to high standards of user experience, usability and speed 
+                        for clients platforms and ideas.
+                    </p>
+              </div>
+        </div>
+        </div>
+    
+   <div class="progressBody">
+
+   
+    <ul>
+        <h1>Skills</h1><br>
+        <li>
+            
+            <h2>Frontend</h2>
+            
+            <!-- HTML5 -->
+        <p style="width:100%" data-value="99">HTML5</p>
+            <progress max="100" value="99" class="html5">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 80%">80%</span>
+                </div>
+            </progress>
+            
+            <!-- CSS3 -->
+        <p style="width:100%" data-value="99">CSS</p>
+            <progress max="100" value="99" class="css3">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 60%">60%</span>
+                </div>
+            </progress>
+            <!-- javaScript -->
+        <p style="width:100%" data-value="99"><span>JavaScript</span></p>
+        <progress max="100" value="99" class="jquery">
+            <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+            <div class="progress-bar">
+                <span style="width: 99%">99%</span>
+            </div>
+        </progress>
+            
+            <!-- jQuery -->
+        <p style="width:100%" data-value="95">jQuery</p>
+            <progress max="100" value="95" class="html5">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 95%">95%</span>
+                </div>
+            </progress>
+        
+        <!-- ReactJs -->
+        <p style="width:100%" data-value="98">ReactJs</p>
+            <progress max="100" value="98" class="jquery">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 98%">98%</span>
+                </div>
+            </progress>
+            
+        </li>
+        <li>
+            <h2>Backend</h2>
+            <!-- Node.js -->
+            <p style="width:100%" data-value="99">NodeJs</p>
+            <progress max="100" value="99" class="node-js">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                    <div class="progress-bar">
+                        <span style="width: 35%">99%</span>
+                    </div>
+                </progress>	
+                    
+        <!-- ExpressJs -->
+        <p style="width:100%" data-value="99">ExpressJs</p>
+            <progress max="100" value="99" class="python">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 99%">99%</span>
+                </div>
+            </progress>
+            
+            <!-- EJS -->
+        <p style="width:100%" data-value="98">EJS</p>
+            <progress max="100" value="98" class="php">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 98%">98%</span>
+                </div>
+            </progress>
+            
+        
+        <!-- SQL(PostgresSQL) -->
+        <p style="width:100%" data-value="99">MongoDB</p>
+            <progress max="100" value="99" class="php">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 99%">99%</span>
+                </div>
+            </progress>
+    
+        <!-- SQL(PostgresSQL) -->
+        <p style="width:100%" data-value="99">PostgreSQL</p>
+            <progress max="100" value="99" class="python">
+                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                <div class="progress-bar">
+                    <span style="width: 99%">99%</span>
+                </div>
+            </progress>
+            
+        </li>
+    </ul>
+    
+    <%- include('partials/footer') %>

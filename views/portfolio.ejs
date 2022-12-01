@@ -1,0 +1,98 @@
+<%- include('partials/header') %>
+    <link rel="stylesheet" href="css/index.css">
+	<!-- services -->
+	<link rel="stylesheet" href="css/test.css">
+<%- include('partials/scripts') %>
+<nav class="navbar navbar-dark  fixed-top">
+  <div class="container">
+    <a class="navbar-brand edify" href="#">EDIFY I.T</a>
+    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end servcol" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title servcolText" id="offcanvasDarkNavbarLabel">EDIFY I.T</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+        <hr>
+        <footer id="footer">
+          <p>
+            <a 
+            rel="noreferrer"
+            target="_blank" href="https://twitter.com/edifyit1?t=TnQ6_51X-2ggKGx3tfkxSQ&s=08">
+              <span class="footerIcon">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+            </a>
+            <a 
+            rel="noreferrer"
+            target="_blank" href=" https://www.facebook.com/EdifyHD">
+              <span class="footerIcon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+            </a>
+            <a 
+            rel="noreferrer"
+            target="_blank" href="https://instagram.com/edify_it">
+              <span class="footerIcon">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </a>
+            <a 
+            rel="noreferrer"
+            target="_blank" href="mailto:edifyit1@gmail.com?subject=Contacting%20Edify%20IT&body=Good%20day%20Ediy%20IT.">
+              <span class="footerIcon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+            </a>
+          </p>
+          <p>©2022 Copyright Edify I.T</strong></p>
+          </footer>
+      </div>
+    </div>
+  </div>
+</nav>
+      <br>
+      <div class="porto">
+<div class="card">
+    <div class="slides">
+      <div slide-id="1" slide-color="#0e101f" class="slide active">
+        <div class="thumbnail"><img class="portImg" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/></div>
+        <a href="/"><h1 class="title">Edify IT</h1></a>
+        <p class="description">Edify IT official website made by Edidiong Obodom.</p>
+      </div>
+      <div slide-id="2" slide-color="rgb(138, 55, 138)" class="slide">
+        <div class="thumbnail"><img class="portImg" src="images/logo.jpg"/></div>
+        <a
+        rel="noreferrer"
+        target="_blank" href="https://ceisfoundation.xyz"><h1 class="title">CEIS-FOUNDATION</h1></a>
+        <p class="description">Comrade Effanga Ita Scholarship Foundation official website made by Edidiong Obodom. </p>
+      </div>
+      <div slide-id="3" slide-color="rgb(34, 34, 117)" class="slide">
+        <div class="thumbnail"><img class="portImg" src="images/thevault.jpg"/></div>
+        <h1 class="title">THE VAULT</h1>
+        <p class="description">A dummy banking web app made just for fun by Edidiong Obodom.</p>
+      </div>
+    </div>
+    <div class="footer"><a id="prev" href="#" ripple="" ripple-color="#666666" class="btn">Prev</a><a id="next" href="#" ripple="" ripple-color="#666666" class="btn">Next</a></div>
+  </div>
+  </div>
+  <%- include('partials/footer') %>
